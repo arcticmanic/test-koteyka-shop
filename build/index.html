@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Интернет-магазин &laquo;Котейка&raquo;</title>
+  <link rel="icon" href="./img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Rubik:wght@500;700&amp;display=swap">
+</head>
+
+<body class="page-body">
+  <div class="page-header__wrapper">
+    <header class="page-header container">
+      <nav class="page-header__menu menu">
+        <a class="page-header__logo logo" href="#">
+          <img src="./img/logo.svg" width="63" height="52" alt="Котейка">
+        </a>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#">Почему мы?</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Номера</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Как нас найти</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <main class="page-main container">
+    <h1 class="page-heading">Наши номера</h1>
+    <div class="page-catalog">
+      <div class="page-catalog__filter filter">
+        <form class="filter__form" id="filter-form" action="#" method="post">
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Цена за сутки, ₽</legend>
+            <div class="filter__field">
+              <label><span>от</span>
+                <input class="filter__input" type="text" name="priceMin" value="" minlength="3" maxlength="8" size="10">
+              </label>
+            </div>
+            <div class="filter__field">
+              <label><span>до</span>
+                <input class="filter__input" type="text" name="priceMax" value="" minlength="3" maxlength="8" size="10">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Площадь</legend>
+            <div class="filter__checkbox">
+              <input id="area1" type="checkbox" name="area" value="0,63">
+              <label for="area1">0,63 м2<sup>2</sup>
+              </label>
+            </div>
+            <div class="filter__checkbox">
+              <input id="area2" type="checkbox" name="area" value="0,90">
+              <label for="area2">0,90 м2</label>
+            </div>
+            <div class="filter__checkbox">
+              <input id="area3" type="checkbox" name="area" value="1,13">
+              <label for="area3">1,13 м2</label>
+            </div>
+            <div class="filter__checkbox">
+              <input id="area4" type="checkbox" name="area" value="1,56">
+              <label for="area4">1,56 м2</label>
+            </div>
+            <div class="filter__checkbox">
+              <input id="area5" type="checkbox" name="area" value="2,56">
+              <label for="area5">2,56 м2</label>
+            </div>
+            <div class="filter__checkbox">
+              <input id="area6" type="checkbox" name="area" value="2,88">
+              <label for="area6">2,88 м2</label>
+            </div>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Оснащение номера</legend>
+            <div class="filter__checkbox">
+              <input id="leisure1" type="checkbox" name="leisure" value="Пустой номер">
+              <label for="leisure1">Пустой номер</label>
+            </div>
+            <div class="filter__checkbox">
+              <input id="leisure2" type="checkbox" name="leisure" value="Лежак">
+              <label for="leisure2">Лежак</label>
+            </div>
+            <div class="filter__checkbox">
+              <input id="leisure3" type="checkbox" name="leisure" value="Когтеточка">
+              <label for="leisure3">Когтеточка</label>
+            </div>
+            <div class="filter__checkbox">
+              <input id="leisure4" type="checkbox" name="leisure" value="Игровой-комплекс">
+              <label for="leisure4">Игровой-комплекс</label>
+            </div>
+            <div class="filter__checkbox">
+              <input id="leisure5" type="checkbox" name="leisure" value="Домик">
+              <label for="leisure5">Домик</label>
+            </div>
+          </fieldset>
+          <button class="filter__button" type="submit">Применить</button>
+          <button class="filter__button filter__button--hidden" type="reset">Сбросить фильтр</button>
+        </form>
+      </div>
+      <div class="page-catalog__grid">
+        <div class="page-catalog__sort">
+          <button class="sort__button" type="button">Открыть - сортировка
+            <img class="icon" src="./img/arrow-up-wide.svg" width="12" height="6" alt="">
+          </button>
+          <div class="js-sort sort sort--hidden">
+            <button class="sort__button sort__button--close" type="button">Закрыть - сортировка
+              <img class="icon" src="./img/arrow-up-wide.svg" width="12" height="6" alt="">
+            </button>
+            <ul class="sort__list">
+              <li class="sort__item">
+                <button class="js-sort-area-up" type="button">
+                  <img class="icon" src="./img/arrow-up.svg" width="5" height="10" alt="">По площади</button>
+              </li>
+              <li class="sort__item">
+                <button class="js-sort-area-down" type="button">
+                  <img class="icon" src="./img/arrow-down.svg" width="5" height="10" alt="">По площади</button>
+              </li>
+              <li class="sort__item">
+                <button class="js-sort-price-up" type="button">
+                  <img class="icon" src="./img/arrow-up.svg" width="5" height="10" alt="">По цене</button>
+              </li>
+              <li class="sort__item">
+                <button class="js-sort-price-down" type="button">
+                  <img class="icon" src="./img/arrow-down.svg" width="5" height="10" alt="">По цене</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="page-catalog__list">
+          <li class="page-catalog__card card">
+            <div class="card__thumbnail">
+              <img src="./img/thumbnail-eco.jpg" width="270" height="185" alt="Фото кота">
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Эконом</h2>
+              <dl class="card__desc">
+                <div>
+                  <dt>Размеры (ШхГхВ)&nbsp;-</dt>
+                  <dd>90х70х180 см</dd>
+                </div>
+                <div>
+                  <dt>Площадь&nbsp;-</dt>
+                  <dd><span data-sort="area">0,63</span> м2</dd>
+                </div>
+                <div>
+                  <dt>Оснащение номера</dt>
+                  <dd class="card__desc-leisures">
+                    <img src="./img/empty.svg" height="16" alt="Пустой">
+                  </dd>
+                </div>
+                <div>
+                  <dt>Цена за сутки:</dt>
+                  <dd><span class="card__price" data-sort="price">100₽</span></dd>
+                </div>
+              </dl>
+              <button class="button card__button" type="button">Забронировать</button>
+            </div>
+          </li>
+          <li class="page-catalog__card card">
+            <div class="card__thumbnail">
+              <img src="./img/thumbnail-eco-plus.jpg" width="270" height="185" alt="Фото кота">
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Эконом плюс</h2>
+              <dl class="card__desc">
+                <div>
+                  <dt>Размеры (ШхГхВ)&nbsp;-</dt>
+                  <dd>90х100х180 см</dd>
+                </div>
+                <div>
+                  <dt>Площадь&nbsp;-</dt>
+                  <dd><span data-sort="area">0,90</span> м2</dd>
+                </div>
+                <div>
+                  <dt>Оснащение номера</dt>
+                  <dd class="card__desc-leisures">
+                    <img src="./img/bed.svg" height="16" alt="Лежак">
+                    <img src="./img/claw-point.svg" height="16" alt="Когтеточка">
+                  </dd>
+                </div>
+                <div>
+                  <dt>Цена за сутки:</dt>
+                  <dd><span class="card__price" data-sort="price">200₽</span></dd>
+                </div>
+              </dl>
+              <button class="button card__button" type="button">Забронировать</button>
+            </div>
+          </li>
+          <li class="page-catalog__card card">
+            <div class="card__thumbnail">
+              <img src="./img/thumbnail-comfort.jpg" width="270" height="185" alt="Фото кота">
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Комфорт</h2>
+              <dl class="card__desc">
+                <div>
+                  <dt>Размеры (ШхГхВ)&nbsp;-</dt>
+                  <dd>100х125х180 см</dd>
+                </div>
+                <div>
+                  <dt>Площадь&nbsp;-</dt>
+                  <dd><span data-sort="area">1,13</span> м2</dd>
+                </div>
+                <div>
+                  <dt>Оснащение номера</dt>
+                  <dd class="card__desc-leisures">
+                    <img src="./img/bed.svg" height="16" alt="Лежак">
+                    <img src="./img/claw-point.svg" height="16" alt="Когтеточка">
+                    <img src="./img/games.svg" height="16" alt="Игровой-комплекс">
+                  </dd>
+                </div>
+                <div>
+                  <dt>Цена за сутки:</dt>
+                  <dd><span class="card__price" data-sort="price">250₽</span></dd>
+                </div>
+              </dl>
+              <button class="button card__button" type="button">Забронировать</button>
+            </div>
+          </li>
+          <li class="page-catalog__card card">
+            <div class="card__thumbnail">
+              <img src="./img/thumbnail-suit.jpg" width="270" height="185" alt="Фото кота">
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Сьют</h2>
+              <dl class="card__desc">
+                <div>
+                  <dt>Размеры (ШхГхВ)&nbsp;-</dt>
+                  <dd>125х125х180 см</dd>
+                </div>
+                <div>
+                  <dt>Площадь&nbsp;-</dt>
+                  <dd><span data-sort="area">1,56</span> м2</dd>
+                </div>
+                <div>
+                  <dt>Оснащение номера</dt>
+                  <dd class="card__desc-leisures">
+                    <img src="./img/bed.svg" height="16" alt="Лежак">
+                    <img src="./img/claw-point.svg" height="16" alt="Когтеточка">
+                    <img src="./img/games.svg" height="16" alt="Игровой-комплекс">
+                  </dd>
+                </div>
+                <div>
+                  <dt>Цена за сутки:</dt>
+                  <dd><span class="card__price" data-sort="price">350₽</span></dd>
+                </div>
+              </dl>
+              <button class="button card__button" type="button">Забронировать</button>
+            </div>
+          </li>
+          <li class="page-catalog__card card">
+            <div class="card__thumbnail">
+              <img src="./img/thumbnail-lux.jpg" width="270" height="185" alt="Фото кота">
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Люкс</h2>
+              <dl class="card__desc">
+                <div>
+                  <dt>Размеры (ШхГхВ)&nbsp;-</dt>
+                  <dd>160х160х180 см</dd>
+                </div>
+                <div>
+                  <dt>Площадь&nbsp;-</dt>
+                  <dd><span data-sort="area">2,56</span> м2</dd>
+                </div>
+                <div>
+                  <dt>Оснащение номера</dt>
+                  <dd class="card__desc-leisures">
+                    <img src="./img/bed.svg" height="16" alt="Лежак">
+                    <img src="./img/claw-point.svg" height="16" alt="Когтеточка">
+                    <img src="./img/games.svg" height="16" alt="Игровой-комплекс">
+                    <img src="./img/house.svg" height="16" alt="Домик">
+                  </dd>
+                </div>
+                <div>
+                  <dt>Цена за сутки:</dt>
+                  <dd><span class="card__price" data-sort="price">500₽</span></dd>
+                </div>
+              </dl>
+              <button class="button card__button" type="button">Забронировать</button>
+            </div>
+          </li>
+          <li class="page-catalog__card card">
+            <div class="card__thumbnail">
+              <img src="./img/thumbnail-super-lux.jpg" width="270" height="185" alt="Фото кота">
+            </div>
+            <div class="card__content">
+              <h2 class="card__title">Супер-люкс</h2>
+              <dl class="card__desc">
+                <div>
+                  <dt>Размеры (ШхГхВ)&nbsp;-</dt>
+                  <dd>180х160х180 см</dd>
+                </div>
+                <div>
+                  <dt>Площадь&nbsp;-</dt>
+                  <dd><span data-sort="area">2,88</span> м2</dd>
+                </div>
+                <div>
+                  <dt>Оснащение номера</dt>
+                  <dd class="card__desc-leisures">
+                    <img src="./img/bed.svg" height="16" alt="Лежак">
+                    <img src="./img/claw-point.svg" height="16" alt="Когтеточка">
+                    <img src="./img/games.svg" height="16" alt="Игровой-комплекс">
+                    <img src="./img/house.svg" height="16" alt="Домик">
+                  </dd>
+                </div>
+                <div>
+                  <dt>Цена за сутки:</dt>
+                  <dd><span class="card__price" data-sort="price">600₽</span></dd>
+                </div>
+              </dl>
+              <button class="button card__button" type="button">Забронировать</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

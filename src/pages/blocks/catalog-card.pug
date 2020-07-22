@@ -1,0 +1,22 @@
+li.page-catalog__card.card
+  .card__thumbnail
+    img(src=catalogCard.image width=270 height=185 alt="Фото кота")
+  .card__content
+    h2.card__title= catalogCard.title
+    dl.card__desc
+      div
+        dt Размеры (ШхГхВ)&nbsp;-
+        dd #{catalogCard.size} см
+      div
+        dt Площадь&nbsp;-
+        dd #[span(data-sort="area") #{catalogCard.area}] м2
+      div
+        dt Оснащение номера
+        dd.card__desc-leisures
+          each leisure in catalogCard.leisures
+            img(src="./img/"+leisure.leisureImg+".svg" height="16" alt=leisure.leisureAlt)
+      div
+        dt Цена за сутки:
+        dd
+          span.card__price(data-sort="price") #{catalogCard.price}₽
+    button(type="button").button.card__button Забронировать

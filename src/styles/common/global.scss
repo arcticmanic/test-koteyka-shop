@@ -1,0 +1,51 @@
+.page {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: var(--base-dark);
+}
+
+.page-body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-heading {
+  font-family: $heading-font-family;
+  margin-bottom: 66px;
+}
+
+.container {
+  max-width: 1246px;
+  padding: 0 25px;
+  margin: 0 auto;
+
+  @include media-breakpoint-down(sm) {
+    padding: 0 15px;
+  }
+}
+
+h1 {
+  font-family: $heading-font-family;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.icon {
+  display: inline-block;
+}
+
+// Scrollbar custom
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px var(--base-black-25);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+}

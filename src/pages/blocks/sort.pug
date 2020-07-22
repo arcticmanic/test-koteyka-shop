@@ -1,0 +1,35 @@
+-
+  const sortTypes = [
+    {
+      sortName : "По площади",
+      sortIcon : "arrow-up",
+      sortClass: "js-sort-area-up"
+    },
+    {
+      sortName : "По площади",
+      sortIcon : "arrow-down",
+      sortClass: "js-sort-area-down"
+    },
+    {
+      sortName : "По цене",
+      sortIcon : "arrow-up",
+      sortClass: "js-sort-price-up"
+    },
+    {
+      sortName : "По цене",
+      sortIcon : "arrow-down",
+      sortClass: "js-sort-price-down"
+    }
+  ]
+.page-catalog__sort
+  button.sort__button(type="button") Открыть - сортировка
+    img.icon(src="./img/arrow-up-wide.svg", width=12 height=6 alt="")
+  .js-sort.sort.sort--hidden
+    button.sort__button.sort__button--close(type="button") Закрыть - сортировка
+      img.icon(src="./img/arrow-up-wide.svg", width=12 height=6 alt="")
+    ul.sort__list
+      each sortItem in sortTypes
+        li.sort__item
+          button(type="button" class=sortItem.sortClass)
+            img.icon(src="./img/" + sortItem.sortIcon +".svg", width=5 height=10 alt="")
+            | #{sortItem.sortName}

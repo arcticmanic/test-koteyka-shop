@@ -1,0 +1,10 @@
+extends layouts/base
+
+block content
+  main.page-main.container
+    h1.page-heading Наши номера
+    .page-catalog
+      block filter
+        include blocks/filter
+      block catalog
+        include blocks/catalog

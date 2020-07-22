@@ -1,0 +1,19 @@
+:root {
+  --base-dark: #1a212f;
+  --base-white: #ffffff;
+  --base-black-25: rgba(0, 0, 0, 0.25);
+  --white-dirty: #fffefd;
+  --accent-color: #f05b1b;
+  --accent-focus-color: #ff7236;
+  --link-color: #141312;
+  --card-border: #e1e1e1;
+  --card-shadow-color: rgba(208, 208, 208, 0.25);
+  --disabled-color: #e9ecef;
+  --filter-color: #fac663;
+  --filter-disabled: rgba(250, 198, 99, 0.5);
+}
+
+$base-font-family: "Lato", "Arial", sans-serif;
+$base-font-size: 14px;
+$base-line-height: 1.2;
+$heading-font-family: "Rubik", "Verdana", sans-serif;

@@ -1,0 +1,57 @@
+.page-catalog__filter.filter
+  form.filter__form#filter-form(action="#" method="post")
+    fieldset.filter__fieldset
+      legend.filter__legend Цена за сутки, ₽
+      div.filter__field
+        label
+          span от
+          input.filter__input(type="text" name="priceMin" value="" minlength="3" maxlength="8" size="10")
+      div.filter__field
+        label
+          span до
+          input.filter__input(type="text" name="priceMax" value="" minlength="3" maxlength="8" size="10")
+    fieldset.filter__fieldset
+      legend.filter__legend Площадь
+      div.filter__checkbox
+        input#area1(type="checkbox" name="area" value="0,63")
+        label(for="area1") 0,63 м2
+          sup 2
+      div.filter__checkbox
+        input#area2(type="checkbox" name="area" value="0,90")
+        label(for="area2") 0,90 м2
+      div.filter__checkbox
+        input#area3(type="checkbox" name="area" value="1,13")
+        label(for="area3") 1,13 м2
+      div.filter__checkbox
+        input#area4(type="checkbox" name="area" value="1,56")
+        label(for="area4") 1,56 м2
+      div.filter__checkbox
+        input#area5(type="checkbox" name="area" value="2,56")
+        label(for="area5") 2,56 м2
+      div.filter__checkbox
+        input#area6(type="checkbox" name="area" value="2,88")
+        label(for="area6") 2,88 м2
+    fieldset.filter__fieldset
+      legend.filter__legend Оснащение номера
+      div.filter__checkbox
+        input#leisure1(type="checkbox" name="leisure" value="Пустой номер")
+        label(for="leisure1")
+          | Пустой номер
+      div.filter__checkbox
+        input#leisure2(type="checkbox" name="leisure" value="Лежак")
+        label(for="leisure2")
+          | Лежак
+      div.filter__checkbox
+        input#leisure3(type="checkbox" name="leisure" value="Когтеточка")
+        label(for="leisure3")
+          | Когтеточка
+      div.filter__checkbox
+        input#leisure4(type="checkbox" name="leisure" value="Игровой-комплекс")
+        label(for="leisure4")
+          | Игровой-комплекс
+      div.filter__checkbox
+        input#leisure5(type="checkbox" name="leisure" value="Домик")
+        label(for="leisure5")
+          | Домик
+    button.filter__button(type="submit") Применить
+    button.filter__button.filter__button--hidden(type="reset") Сбросить фильтр

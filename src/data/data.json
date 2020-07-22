@@ -1,0 +1,140 @@
+{
+  "catalog": {
+    "catalogCard1": {
+      "title": "Эконом",
+      "size": "90х70х180",
+      "area": "0,63",
+      "leisures": [
+        {
+          "leisureImg": "empty",
+          "leisureAlt": "Пустой"
+        }
+      ],
+      "price": "100",
+      "image": "./img/thumbnail-eco.jpg"
+    },
+    "catalogCard2": {
+      "title": "Эконом плюс",
+      "size": "90х100х180",
+      "area": "0,90",
+      "leisures": [
+        {
+          "leisureImg": "bed",
+          "leisureAlt": "Лежак"
+        },
+        {
+          "leisureImg": "claw-point",
+          "leisureAlt": "Когтеточка"
+        }
+      ],
+      "price": "200",
+      "image": "./img/thumbnail-eco-plus.jpg"
+    },
+    "catalogCard3": {
+      "title": "Комфорт",
+      "size": "100х125х180",
+      "area": "1,13",
+      "leisures": [
+        {
+          "leisureImg": "bed",
+          "leisureAlt": "Лежак"
+        },
+        {
+          "leisureImg": "claw-point",
+          "leisureAlt": "Когтеточка"
+        },
+        {
+          "leisureImg": "games",
+          "leisureAlt": "Игровой-комплекс"
+        }
+      ],
+      "price": "250",
+      "image": "./img/thumbnail-comfort.jpg"
+    },
+    "catalogCard4": {
+      "title": "Сьют",
+      "size": "125х125х180",
+      "area": "1,56",
+      "leisures": [
+        {
+          "leisureImg": "bed",
+          "leisureAlt": "Лежак"
+        },
+        {
+          "leisureImg": "claw-point",
+          "leisureAlt": "Когтеточка"
+        },
+        {
+          "leisureImg": "games",
+          "leisureAlt": "Игровой-комплекс"
+        }
+      ],
+      "price": "350",
+      "image": "./img/thumbnail-suit.jpg"
+    },
+    "catalogCard5": {
+      "title": "Люкс",
+      "size": "160х160х180",
+      "area": "2,56",
+      "leisures": [
+        {
+          "leisureImg": "bed",
+          "leisureAlt": "Лежак"
+        },
+        {
+          "leisureImg": "claw-point",
+          "leisureAlt": "Когтеточка"
+        },
+        {
+          "leisureImg": "games",
+          "leisureAlt": "Игровой-комплекс"
+        },
+        {
+          "leisureImg": "house",
+          "leisureAlt": "Домик"
+        }
+      ],
+      "price": "500",
+      "image": "./img/thumbnail-lux.jpg"
+    },
+    "catalogCard6": {
+      "title": "Супер-люкс",
+      "size": "180х160х180",
+      "area": "2,88",
+      "leisures": [
+        {
+          "leisureImg": "bed",
+          "leisureAlt": "Лежак"
+        },
+        {
+          "leisureImg": "claw-point",
+          "leisureAlt": "Когтеточка"
+        },
+        {
+          "leisureImg": "games",
+          "leisureAlt": "Игровой-комплекс"
+        },
+        {
+          "leisureImg": "house",
+          "leisureAlt": "Домик"
+        }
+      ],
+      "price": "600",
+      "image": "./img/thumbnail-super-lux.jpg"
+    }
+  },
+  "footer": {
+    "copyright": "Test"
+  },
+  "header": {
+    "site": {
+      "title": "Our Awesome Website",
+      "meta": {
+        "charset": "utf8",
+        "description": "Lorem ipsum dolor sit amit.",
+        "keywords": "",
+        "favicon": "favicon.ico"
+      }
+    }
+  }
+}
